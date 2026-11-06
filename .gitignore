@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Supabase
+supabase/.branches
+supabase/.temp
+
+# Flutter / Dart
+app/.dart_tool/
+app/build/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/ios/Pods/
+app/ios/.symlinks/
+app/android/.gradle/
+app/android/local.properties
+*.iml
+.idea/
