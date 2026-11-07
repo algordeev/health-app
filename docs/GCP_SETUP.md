@@ -12,11 +12,11 @@ These steps need your Google account, so they can't be scripted. Tick them off a
 - [ ] Create these OAuth clients (Credentials → Create OAuth client ID):
   - [ ] **Web application** "supabase-auth": add the Supabase redirect URI `https://<project-ref>.supabase.co/auth/v1/callback`.
   - [ ] **Web application** "health-connect": add the redirect URI `https://<project-ref>.supabase.co/functions/v1/health-oauth-callback`.
-  - [ ] **iOS**: bundle ID `com.healthcompanion.app`.
-  - [ ] **Android**: package `com.healthcompanion.app` plus the SHA-1 of the debug keystore (`keytool -list -v -keystore ~/.android/debug.keystore -storepass android`).
+  - [ ] **iOS**: bundle ID `com.healthcompanion.healthCompanion`.
+  - [ ] **Android**: package `com.healthcompanion.health_companion` plus the SHA-1 of the debug keystore (`keytool -list -v -keystore ~/.android/debug.keystore -storepass android`).
 
 ## Supabase
-- [ ] Create project `health-companion-dev` in an EU or US region near you. Write down the project ref, URL, anon key and service-role key.
+- [ ] Create project `health-companion-dev` in an EU or US region near you. Write down the project ref, URL, publishable key and secret (service-role) key.
 - [ ] Auth → Providers → Google: turn it on, enter the "supabase-auth" web client ID and secret, and add the iOS and Android client IDs under authorized client IDs (needed for native sign-in).
 - [ ] Database → Extensions: confirm `pg_cron`, `pg_net` and `supabase_vault` are available.
 - [ ] Link and push the schema:
